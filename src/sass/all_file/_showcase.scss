@@ -1,0 +1,145 @@
+// showcase-section
+@use 'variable';
+
+// main
+main {
+  background: url(../imgs/showcaseBack.png) no-repeat center center/cover;
+  height: 100vh;
+  @media (max-width: 768px) {
+    height: 100vh;
+  }
+}
+// header
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 5rem;
+  justify-content: space-around;
+  @media (max-width: 768px) {
+    justify-content: space-between;
+    padding-inline: 4rem;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    @media (max-width: 768px) {
+      order: 2;
+      font-size: 3.2rem;
+    }
+  }
+
+  nav {
+    @media (max-width: 1200px) {
+      order: 1;
+      display: none;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 6rem;
+    }
+  }
+  .transparent-btn {
+    order: 3;
+    @media (max-width: 768px) {
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+// 
+.showcase {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15rem;
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 11rem;
+
+    h3 {
+      color: #80ab9e;
+      font-size: 2.8rem;
+      font-weight: 300;
+    }
+
+    h1 {
+      font-size: 5.2rem;
+    }
+
+    a {
+      margin-top: 5rem;
+    }
+  }
+  &-img {
+    max-width: 664.5px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    position: relative;
+    margin-top: 5rem;
+
+    &-content {
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 0;
+      text-align: center;
+
+      h1 {
+        font-size: 4rem;
+        padding: 1rem;
+      }
+      a {
+        @media (max-width: 500px) {
+          margin-top: 40rem;
+        }
+        @media (max-width: 417px) {
+          margin-top: 30rem;
+        }
+        margin-top: 0rem;
+      }
+    }
+
+    &-img {
+      position: absolute;
+      top: 30rem;
+    }
+  }
+
+  @media (max-height: 838px) and (max-width: 767px) {
+    &-content {
+      h1 {
+        z-index: 3333;
+        color: white;
+      }
+      h3 {
+        z-index: 3333;
+      }
+      a {
+        z-index: 3333;
+        margin-top: 10rem;
+      }
+    }
+    &-img {
+      position: absolute;
+      top: 10rem;
+      opacity: 0.3;
+    }
+  }
+
+  @media (max-height: 640px) and (max-width: 1610px) {
+    margin-top: 1rem;
+    align-items: center;
+    &-content {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+}

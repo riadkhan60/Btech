@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mukta", sans-serif;
+  background-color: #0D0D0D;
+  color: #F5FBF2;
+}
+
+a {
+  color: #F5FBF2;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  line-height: 3.2rem;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.section-title {
+  font-size: 3.6rem;
+  color: #F5FBF2;
+}
+@media (max-width: 1024px) {
+  .section-title {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+}
+
+.transparent-btn {
+  padding: 2.4rem 4.8rem;
+  border: 1px solid #00E3A5;
+  font-weight: 800;
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+}
+
+.showcase-btn {
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  padding: 2.4rem 4.8rem;
+  background-color: #00E3A5;
+  color: #000000;
+}
+
+main {
+  background: url(../imgs/showcaseBack.png) no-repeat center center/cover;
+  height: 100vh;
+}
+@media (max-width: 768px) {
+  main {
+    height: 100vh;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 5rem;
+  justify-content: space-around;
+}
+@media (max-width: 768px) {
+  header {
+    justify-content: space-between;
+    padding-inline: 4rem;
+  }
+}
+header h1 {
+  font-size: 4.5rem;
+  font-weight: 300;
+}
+@media (max-width: 768px) {
+  header h1 {
+    order: 2;
+    font-size: 3.2rem;
+  }
+}
+@media (max-width: 1200px) {
+  header nav {
+    order: 1;
+    display: none;
+  }
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+}
+header .transparent-btn {
+  order: 3;
+}
+@media (max-width: 768px) {
+  header .transparent-btn {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+.showcase {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15rem;
+}
+.showcase-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 11rem;
+}
+.showcase-content h3 {
+  color: #80ab9e;
+  font-size: 2.8rem;
+  font-weight: 300;
+}
+.showcase-content h1 {
+  font-size: 5.2rem;
+}
+.showcase-content a {
+  margin-top: 5rem;
+}
+.showcase-img {
+  max-width: 664.5px;
+}
+@media (max-width: 768px) {
+  .showcase {
+    flex-direction: column;
+    position: relative;
+    margin-top: 5rem;
+  }
+  .showcase-content {
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0;
+    text-align: center;
+  }
+  .showcase-content h1 {
+    font-size: 4rem;
+    padding: 1rem;
+  }
+  .showcase-content a {
+    margin-top: 0rem;
+  }
+}
+@media (max-width: 768px) and (max-width: 500px) {
+  .showcase-content a {
+    margin-top: 40rem;
+  }
+}
+@media (max-width: 768px) and (max-width: 417px) {
+  .showcase-content a {
+    margin-top: 30rem;
+  }
+}
+@media (max-width: 768px) {
+  .showcase-img {
+    position: absolute;
+    top: 30rem;
+  }
+}
+@media (max-height: 838px) and (max-width: 767px) {
+  .showcase-content h1 {
+    z-index: 3333;
+    color: white;
+  }
+  .showcase-content h3 {
+    z-index: 3333;
+  }
+  .showcase-content a {
+    z-index: 3333;
+    margin-top: 10rem;
+  }
+  .showcase-img {
+    position: absolute;
+    top: 10rem;
+    opacity: 0.3;
+  }
+}
+@media (max-height: 640px) and (max-width: 1610px) {
+  .showcase {
+    margin-top: 1rem;
+    align-items: center;
+  }
+  .showcase-content h1 {
+    font-size: 3rem;
+  }
+}
+
+.achivements {
+  text-align: center;
+}
+.achivements h4 {
+  font-size: 2.4rem;
+  color: #80AB9E;
+}
+.achivements-sections {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15rem;
+  color: #00E3A5;
+}
+.achivements-sections h5 {
+  font-size: 3.5rem;
+}
+.achivements-sections h6 {
+  font-size: 1.8rem;
+}
+@media (max-width: 1024px) {
+  .achivements-sections {
+    gap: 3rem;
+  }
+  .achivements-sections h5 {
+    font-size: 1.5rem;
+  }
+  .achivements-sections h6 {
+    font-size: 1rem;
+  }
+}
+.achivements-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1447.09px;
+  margin: auto;
+  align-items: center;
+  justify-items: center;
+  background: rgba(31, 68, 57, 0.1568627451);
+  padding: 70px;
+  border-radius: 50pc;
+}
+@media (max-width: 1024px) {
+  .achivements-logos {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: auto;
+    padding-block: 40px;
+    gap: 1rem;
+  }
+  .achivements-logos > *:first-child {
+    grid-column: span 2;
+  }
+  .achivements-logos > *:last-child {
+    grid-column: span 2;
+  }
+}
+.achivements-logos img {
+  width: 200px;
+  opacity: 0.4;
+}
+@media (max-width: 1024px) {
+  .achivements-logos img {
+    width: 80px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

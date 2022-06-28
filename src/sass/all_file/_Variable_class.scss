@@ -1,0 +1,30 @@
+// preset classes
+
+@use '_variable' as *;
+.section-title
+{
+  font-size: 3.6rem;
+  color: #F5FBF2;
+  @media (max-width: 1024px) {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+}
+
+.transparent-btn
+{
+  padding: 2.4rem 4.8rem;
+  border: 1px solid $primary-color;
+  font-weight: 800;
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+}
+
+.showcase-btn
+{
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  padding: 2.4rem 4.8rem;
+  background-color: $primary-color;
+  color: #000000;
+}

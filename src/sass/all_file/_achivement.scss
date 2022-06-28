@@ -1,0 +1,71 @@
+@use 'variable' as v;
+@use 'variable_class' as vc;
+
+
+// Achivement
+
+.achivements
+{
+  text-align: center;
+  h4{
+    font-size: 2.4rem;
+    color: #80AB9E;
+  }
+  &-sections{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+    color: v.$primary-color;
+    h5{
+      font-size: 3.5rem;
+    }
+
+    h6{
+      font-size: 1.8rem;
+    }
+  }
+  @media (max-width: 1024px) {
+   &-sections{
+    gap: 3rem;
+    h5{
+      font-size: 1.5rem;
+    }
+
+    h6{
+      font-size: 1rem;
+    }
+   }
+  }
+  &-logos{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    max-width: 1447.09px;
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+    background: v.$shadow-color;
+    padding: 70px;
+    border-radius: 50pc;
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2,1fr);
+      justify-items: auto;
+      padding-block: 40px;
+      gap: 1rem;
+      > *:first-child{
+        grid-column: span 2;
+      }
+      > *:last-child{
+        grid-column: span 2;
+      }
+    }
+    img{
+      width: 200px;
+      opacity: 0.4;
+      @media (max-width: 1024px) {
+        width: 80px;
+      }
+    }
+  }
+}

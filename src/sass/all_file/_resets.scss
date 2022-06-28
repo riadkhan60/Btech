@@ -1,0 +1,46 @@
+// import font
+@use 'font' as f;
+@use 'variable' as v;
+
+
+// resets
+
+html{
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: f.$font;
+  background-color: v.$background-color;
+  color: v.$text-color;
+}
+
+a{
+  color: v.$text-color;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+ul{
+  list-style: none;
+}
+
+p
+{
+  line-height: 3.2rem;
+}
+
+img
+{
+  width: 100%;
+  object-fit: cover;
+}
+
+
