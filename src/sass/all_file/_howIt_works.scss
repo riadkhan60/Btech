@@ -1,0 +1,102 @@
+@use 'variable_class' as vc;
+@use 'variable' as v;
+
+.how-works {
+  margin-top: 25rem;
+  h2 {
+    text-align: center;
+  }
+
+  .work-info {
+    max-width: 90%;
+    margin-left: auto;
+    margin-bottom: 50px;
+    background: url(/src/imgs/worksback.png) no-repeat center center/cover;
+    &-contents {
+      padding-left: 10rem;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      @media (max-width: 1618px) {
+        border-radius: 50vmax 0 0 50vmax;
+        padding: 20px;
+
+        h3 {
+        font-size: 1.6rem;
+      }
+      }
+      border-radius: 100vmax 0 0 100vmax;
+      background-color: rgba(83, 83, 83, 0.075);
+      span {
+        font-size: 20rem;
+        color: #8eb8ab31;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-fill-color: transparent;
+        font-weight: 800;
+        @media (max-width: 1618px) {
+          font-size: 5rem;
+          margin-right: 1rem;
+        }
+      }
+      h3 {
+        font-size: 2.4rem;
+      }
+      p {
+        max-width: 450px;
+        @media (max-width: 1618px) {
+          font-size: 1.2rem;
+        }
+      }
+      img {
+        width: 96px;
+        height: 96px;
+        margin-left: 400px;
+        @media (max-width: 1618px) {
+          margin-left: 10px;
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+
+  .work-info:nth-child(2) {
+    margin-left: 0;
+    margin-right: auto;
+    .work-info-contents {
+      border-radius: 0 100vmax 100vmax 0;
+      flex-direction: row-reverse;
+      padding-left: 0;
+      padding-right: 10rem;
+       @media (max-width: 1618px) {
+        border-radius: 0 50vmax 50vmax 0;
+        padding: 20px;
+        h3{
+          font-size: 1.6rem;
+        }
+        span{
+          margin-left: 1rem;
+        }
+      }
+    }
+    img {
+      margin-right: 400px;
+       @media (max-width: 1618px) {
+          margin-right: 10px;
+         
+    }
+  }
+
+}
+a {
+  margin-top: 10rem;
+  display: flex;
+  margin-inline: auto;
+  max-width: max-content;
+
+  // margin-top: 10rem;
+  // display: block;
+  // max-width: max-content;
+  // margin-inline: auto;
+}
+}

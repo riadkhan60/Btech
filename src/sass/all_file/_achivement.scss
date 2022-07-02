@@ -47,7 +47,7 @@
     justify-items: center;
     background: v.$shadow-color;
     padding: 70px;
-    border-radius: 50pc;
+    border-radius: 50vmax;
     @media (max-width: 1024px) {
       grid-template-columns: repeat(2,1fr);
       justify-items: auto;

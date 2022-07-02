@@ -2,45 +2,49 @@
 @use 'font' as f;
 @use 'variable' as v;
 
-
 // resets
 
-html{
+html {
   scroll-behavior: smooth;
   font-size: 10px;
 }
 
-*, *::after, *::before{
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: f.$font;
   background-color: v.$background-color;
   color: v.$text-color;
+  overflow-x: hidden;
 }
 
-a{
+a {
   color: v.$text-color;
   text-decoration: none;
   font-size: 1.8rem;
 }
 
-ul{
+a:hover{
+  opacity: 0.9;
+}
+ul {
   list-style: none;
 }
 
-p
-{
+p {
   line-height: 3.2rem;
+  font-size: 2rem;
+  color: #80ab9e;
+  font-weight: 300;
 }
 
-img
-{
+img {
   width: 100%;
   object-fit: cover;
 }
-
-

@@ -1,0 +1,50 @@
+@use 'variable' as v;
+
+.testimonials {
+  background: url(/src/imgs/testiback.png) no-repeat left center/cover;
+  margin-top: 10rem;
+  h2 {
+    padding: 5rem 0;
+    text-align: center;
+  }
+  .swiper{
+
+    max-width: 60%;
+    border-radius: 50vmax;
+    background: v.$shadow-color-testimonials;
+    @media (max-width: 1065px) {
+      max-width: 95%;
+    }
+  }
+  &-groups {
+    margin: auto;
+    img {
+      width: 100px;
+    }
+    .testimonials-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 6rem;
+       @media (max-width: 1300px) {
+     flex-direction: column;
+     text-align: center;
+    }
+      p {
+        max-width: 500px;
+      }
+      h4 {
+        margin-top: 3rem;
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+.swiper-button-prev, .swiper-button-next
+{
+  padding: 0 4rem;
+  @media (max-width: 800px) {
+    padding: 0 1rem;    
+    }
+}
